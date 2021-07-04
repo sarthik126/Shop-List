@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+nav{
+  width: 100vw;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  max-height: 20vh;
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar span{
+  font-size: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar .btn{
+  height: auto;
+  background-color: rgb(207, 86, 86);
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+  color: white;
+  border: 1px solid black;
+}
+.main{
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  max-height: 80vh;
+  width: 100wh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding: 30px 200px;
+}
+.form{
+  position: relative;
+  width: 100%;
+  border: 1px solid black;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  max-height: 20%;
+}
+.form input{
+  width: 75%;
+  height: 30px;
+  background: none;
+  padding: 4px 10px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.form button{
+  width: 20%;
+  font-size: 20px;
+  border-radius: 5px;
+  background: none;
+  background-color: rgb(47, 38, 124);
+  height: auto;
+  border: 1px solid black;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.content{
+  position: relative;
+  min-width: 100%;
+  border: 1px solid black;
+  max-height: 75%;
+  margin: 5%;
+  padding: 20px 50px;
+  overflow-y: scroll;
+  word-wrap: break-word;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content ul li{
+  position: relative;
+  list-style: none;
+  border: 1px solid black;
+  margin: 10px 0px;
+  padding: 5px 10px;
+  font-size: 20px;
+  justify-content: space-between;
+  max-width: 850px;
+  word-wrap: break-word;
+}
+.content ul li .btn2{
+  float: right;
+  border: none;
+  background: none;
+  background-color: rgb(158, 46, 74);
+  font-size: 20px;
+  padding: 3px 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: white;
 }
